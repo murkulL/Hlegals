@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 body,
 h1,
 h2,
@@ -30,10 +25,6 @@ blockquote,
 dl,
 dd {
   margin: 0;
-}
-
-ul[class], ol[class] {
-  list-style: none;
 }
 
 img {
@@ -83,4 +74,8 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+a, button, input[type=submit] {
+  cursor: pointer;
 }

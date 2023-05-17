@@ -1,6 +1,9 @@
 html,
 body {
   height: 100%;
+  font-family: "TT Norms", sans-serif;
+  font-style: 16px;
+  line-height: 22px;
 }
 
 .wrapper {

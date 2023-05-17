@@ -1,7 +1,11 @@
 html,
 body {
 	height: 100%;
-	// overflow-x: hidden;
+	overflow-x: hidden;
+	font-family: 'TT Norms', sans-serif;
+	font-style: 16px;
+	line-height: 22px;
+	color: $default;
 }
 .wrapper {
 	display: flex;
@@ -15,7 +19,7 @@ body {
 	flex: 0 0 auto;
 }
 .container{
-  max-width: 960px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 10px;
 }
