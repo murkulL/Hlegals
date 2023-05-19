@@ -7,11 +7,10 @@ html{
 *::before{
   box-sizing: inherit;
 }
-
-// ul[class],
-// ol[class] {
-//   padding: 0;
-// }
+ul,
+ol {
+  padding: 0 !important;
+}
 
 body,
 h1,
@@ -32,9 +31,9 @@ dd {
   margin: 0;
 }
 
-// ul[class] ,ol[class] {
-//   list-style: none;
-// }
+ul[class] ,ol[class] {
+  list-style: none;
+}
 img {
   max-width: 100%;
   display: block;
