@@ -81,9 +81,70 @@ $(document).ready(function () {
       infoSlider.html(tabContent);
     } else {
       initSlider();
+      openText();
     }
   }
 
   mediaQuery.addListener(handleScreenChange);
   handleScreenChange(mediaQuery);
 });
+var ulContent = " <ul class=\"succes-cases__items\">\n<li class=\"succes-cases__item item-1\">\n    <h4 class=\"succes-cases__title\">\u0423\u0441\u043F\u0456\u0448\u043D\u0456 \u043A\u0435\u0439\u0441\u0438</h4>\n</li>\n<li class=\"succes-cases__item item-2\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">Hillel IT School</span>\n</li>\n<li class=\"succes-cases__item item-3\">\n    <p class=\"succes-cases__text\">\u041F\u0456\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u043E\u0433\u043E \u044E\u0440\u0438\u0434\u0438\u0447\u043D\u043E\u0433\u043E \u0432\u0438\u0441\u043D\u043E\u0432\u043A\u0443 \u0434\u043B\u044F \u0454\u0432\u0440\u043E\u043F\u0435\u0439\u0441\u044C\u043A\u043E\u0433\u043E \u0431\u0430\u043D\u043A\u0443</p>\n    <span class=\"succes-cases__work\">WannaBiz</span>\n</li>\n<li class=\"succes-cases__item item-4\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">tapgerine</span>\n</li>\n<li class=\"succes-cases__item item-5\">\n    <p class=\"succes-cases__text\">\u041E\u0441\u043A\u0430\u0440\u0436\u0435\u043D\u043D\u044F \u043F\u043E\u0434\u0430\u0442\u043A\u043E\u0432\u0438\u0445 \u043F\u043E\u0432\u0456\u0434\u043E\u043C\u043B\u0435\u043D\u044C-\u0440\u0456\u0448\u0435\u043D\u044C \u0414\u0424\u0421</p>\n    <span class=\"succes-cases__work\">adtelligent</span>\n</li>\n<li class=\"succes-cases__item item-6\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0440\u0435\u0434\u0438\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0430\u0433\u0440\u043E\u0442\u0440\u0435\u0439\u0434\u0435\u0440\u0456\u0432 \u043C\u0430\u043B\u044C\u0442\u0456\u0439\u0441\u044C\u043A\u0438\u043C \u0431\u0430\u043D\u043A\u043E\u043C</p>\n    <span class=\"succes-cases__work\">Clikky</span>\n</li>\n<li class=\"succes-cases__item item-7\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">tapgerine</span>\n</li>\n</ul>";
+var gridContent = "<div class=\"succes-cases__items text-center\">\n<div class=\"row\">\n  <div class=\"succes-cases__item item-1 col\">\n    <h4 class=\"succes-cases__title\">\u0423\u0441\u043F\u0456\u0448\u043D\u0456 \u043A\u0435\u0439\u0441\u0438</h4>\n  <div class=\"succes-cases__item item-4 item col\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">Hillel IT School</span>\n  </div>\n</div>\n  <div class=\"succes-cases__item item-2 item col\">\n    <p class=\"succes-cases__text\">\u041F\u0456\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u043E\u0433\u043E \u044E\u0440\u0438\u0434\u0438\u0447\u043D\u043E\u0433\u043E \u0432\u0438\u0441\u043D\u043E\u0432\u043A\u0443 \u0434\u043B\u044F \u0454\u0432\u0440\u043E\u043F\u0435\u0439\u0441\u044C\u043A\u043E\u0433\u043E \u0431\u0430\u043D\u043A\u0443</p>\n    <span class=\"succes-cases__work\">WannaBiz</span>\n  </div>\n  <div class=\"succes-cases__item item-3 item col\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">tapgerine</span>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"succes-cases__item item-5 item col\">\n    <p class=\"succes-cases__text\">\u041E\u0441\u043A\u0430\u0440\u0436\u0435\u043D\u043D\u044F \u043F\u043E\u0434\u0430\u0442\u043A\u043E\u0432\u0438\u0445 \u043F\u043E\u0432\u0456\u0434\u043E\u043C\u043B\u0435\u043D\u044C-\u0440\u0456\u0448\u0435\u043D\u044C \u0414\u0424\u0421</p>\n    <span class=\"succes-cases__work\">adtelligent</span>\n  </div>\n  <div class=\"succes-cases__item item-6 item col\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0440\u0435\u0434\u0438\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0430\u0433\u0440\u043E\u0442\u0440\u0435\u0439\u0434\u0435\u0440\u0456\u0432 \u043C\u0430\u043B\u044C\u0442\u0456\u0439\u0441\u044C\u043A\u0438\u043C \u0431\u0430\u043D\u043A\u043E\u043C</p>\n    <span class=\"succes-cases__work\">Clikky</span>\n  </div>\n  <div class=\"succes-cases__item item-7 item col\">\n    <p class=\"succes-cases__text\">\u0421\u0443\u043F\u0440\u043E\u0432\u0456\u0434 \u043F\u0440\u043E\u0435\u043A\u0442\u0443 \u0437 \u043A\u0443\u043F\u0456\u0432\u043B\u0456-\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0441\u0456\u043B\u044C\u0441\u044C\u043A\u043E\u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u044C\u043A\u043E\u0457 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0456\u0457</p>\n    <span class=\"succes-cases__work\">tapgerine</span>\n  </div>\n</div>\n</div>\n</div>";
+var mediaForGrid = window.matchMedia('(min-width: 1360px)');
+var divElement = document.querySelector('.succes-cases__box-content');
+
+function initGrid(event) {
+  if (event.matches) {
+    divElement.innerHTML = gridContent;
+    divElement.classList.add('grid-layout');
+  } else {
+    divElement.innerHTML = '';
+    divElement.classList.remove('grid-layout');
+    divElement.innerHTML = ulContent;
+  }
+}
+
+mediaForGrid.addListener(initGrid);
+initGrid(mediaForGrid); // function openText() {
+//   const textElements = document.querySelectorAll('.totell__text');
+//   const imgElements = document.querySelectorAll('.totell__img');
+//   imgElements.forEach(function(imgElement) {
+//     imgElement.addEventListener('click', function() {
+//       textElements.forEach(function(item) {
+//         item.style.display = 'block';
+//       });
+//     });
+//   });
+// }
+// function openText() {
+//   const textElements = document.querySelectorAll('.totell__text');
+//   const imgElements = document.querySelectorAll('.totell__img');
+//   imgElements.forEach(function(imgElement, index) {
+//     imgElement.addEventListener('click', function() {
+//       let element = textElements.imgElements;
+//       element[index].style.display = 'block';
+//     });
+//   });
+// }
+
+function openText() {
+  var textElements = document.querySelectorAll('.totell__text');
+  var imgElements = document.querySelectorAll('.totell__item');
+  var winElement = window.matchMedia('(max-width: 900px)');
+  imgElements.forEach(function (imgElement, index) {
+    imgElement.addEventListener('click', function () {
+      var element = textElements[index];
+
+      if (winElement.matches) {
+        if (element.style.display == 'block') {
+          element.style.display = 'none';
+        } else {
+          element.style.display = 'block';
+        }
+      }
+    });
+  });
+}
+
+winElement.addListener(openText);
+openText();

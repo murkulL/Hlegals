@@ -386,7 +386,7 @@ body {
     z-index: 1000;
   }
   .header__nav-items--active {
-    transform: translateY(-2.35%);
+    transform: translateY(-2%);
   }
   .header__nav-items--active::before {
     content: "";
@@ -716,10 +716,12 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 17px;
-  background: linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+  background: #F0145A;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .succes-cases__text {
   color: #686887;
@@ -733,18 +735,25 @@ body {
   font-size: 18px;
   line-height: 26px;
 }
+.succes-cases .item-1 {
+  border-radius: 12px 12px 0 0;
+}
+.succes-cases .item-7 {
+  border-radius: 0 0 12px 12px;
+}
 
 .trust {
   padding: 0;
   margin: 0;
   margin-top: 30px;
 }
-.trust h3 {
+.trust__title {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 .trust__link {
   width: 188px;
@@ -893,11 +902,13 @@ body {
   line-height: 21px;
   color: #24A3FF;
   padding-left: 21px;
+  padding-top: 20px;
 }
 .totell__text {
   text-align: start;
   padding: 20px;
   padding-top: 0;
+  display: none;
 }
 .totell__text::before {
   content: "";
@@ -906,9 +917,6 @@ body {
   display: block;
   margin: 20px;
   margin-top: 0;
-}
-.totell__img {
-  padding-bottom: 20px;
 }
 .totell__date {
   color: #B3B3BA;
@@ -1096,14 +1104,14 @@ body {
     content: "";
     width: 30px;
     height: 5px;
-    background: #ff0000;
+    background: #F0145A;
     display: block;
     transform: rotate(90deg);
     position: absolute;
     left: 428px;
     top: 143px;
     z-index: 2;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .info .nav-link::after {
     content: "";
@@ -1255,18 +1263,42 @@ body {
     height: 120px;
   }
 
-  .totell .totell__lists {
+  .totell__lists {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
-  .totell .totell__item {
-    flex-basis: 33.33%;
+  .totell__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+  .totell__item {
     display: flex;
     flex-direction: column;
   }
-  .totell .totell__item > * {
-    margin-top: 0;
-    margin-bottom: auto;
+  .totell__text {
+    display: block;
+  }
+
+  .gradient::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+    bottom: 415px;
+    position: absolute;
+  }
+
+  .totell .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 950px) {
@@ -1280,4 +1312,75 @@ body {
     font-size: 42px;
     line-height: 50px;
   }
+}
+@media screen and (min-width: 1360px) {
+  .succes-cases {
+    height: 500px;
+  }
+  .succes-cases__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .succes-cases__text {
+    text-align: start;
+    font-size: 24px;
+    line-height: 28px;
+    color: #686887;
+  }
+  .succes-cases .col {
+    flex: none;
+  }
+  .succes-cases .row {
+    flex-wrap: nowrap;
+  }
+  .succes-cases .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .succes-cases .item-1 {
+    height: 54px;
+    max-width: 433px;
+    border-radius: 12px 0 0 0;
+  }
+  .succes-cases .item-2 {
+    max-width: 454px;
+    height: 255px;
+  }
+  .succes-cases .item-3 {
+    max-width: 433px;
+    height: 255px;
+    border-radius: 0 12px 0 0;
+  }
+  .succes-cases .item-4 {
+    width: 433px;
+    height: 198px;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .succes-cases .item-5 {
+    max-width: 320px;
+    height: 198px;
+    border-radius: 0 0 0 12px;
+  }
+  .succes-cases .item-6 {
+    height: 198px;
+    max-width: 453px;
+  }
+  .succes-cases .item-7 {
+    height: 198px;
+    max-width: 547px;
+    border-radius: 0 0 12px 0;
+  }
+}
+.slick-dots li button {
+  background-color: #24A3FF;
+}
+
+li.slick-active button {
+  background-color: #24A3FF;
+  opacity: 1;
 }

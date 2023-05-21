@@ -128,9 +128,139 @@ $(document).ready(function() {
       infoSlider.html(tabContent)
     } else {
       initSlider();
+      openText();
     }
   }
 
   mediaQuery.addListener(handleScreenChange);
   handleScreenChange(mediaQuery);
 });
+
+
+let ulContent = ` <ul class="succes-cases__items">
+<li class="succes-cases__item item-1">
+    <h4 class="succes-cases__title">Успішні кейси</h4>
+</li>
+<li class="succes-cases__item item-2">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">Hillel IT School</span>
+</li>
+<li class="succes-cases__item item-3">
+    <p class="succes-cases__text">Підготовка комплексного юридичного висновку для європейського банку</p>
+    <span class="succes-cases__work">WannaBiz</span>
+</li>
+<li class="succes-cases__item item-4">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">tapgerine</span>
+</li>
+<li class="succes-cases__item item-5">
+    <p class="succes-cases__text">Оскарження податкових повідомлень-рішень ДФС</p>
+    <span class="succes-cases__work">adtelligent</span>
+</li>
+<li class="succes-cases__item item-6">
+    <p class="succes-cases__text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+    <span class="succes-cases__work">Clikky</span>
+</li>
+<li class="succes-cases__item item-7">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">tapgerine</span>
+</li>
+</ul>`
+
+
+let gridContent = `<div class="succes-cases__items text-center">
+<div class="row">
+  <div class="succes-cases__item item-1 col">
+    <h4 class="succes-cases__title">Успішні кейси</h4>
+  <div class="succes-cases__item item-4 item col">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">Hillel IT School</span>
+  </div>
+</div>
+  <div class="succes-cases__item item-2 item col">
+    <p class="succes-cases__text">Підготовка комплексного юридичного висновку для європейського банку</p>
+    <span class="succes-cases__work">WannaBiz</span>
+  </div>
+  <div class="succes-cases__item item-3 item col">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">tapgerine</span>
+  </div>
+</div>
+<div class="row">
+  <div class="succes-cases__item item-5 item col">
+    <p class="succes-cases__text">Оскарження податкових повідомлень-рішень ДФС</p>
+    <span class="succes-cases__work">adtelligent</span>
+  </div>
+  <div class="succes-cases__item item-6 item col">
+    <p class="succes-cases__text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+    <span class="succes-cases__work">Clikky</span>
+  </div>
+  <div class="succes-cases__item item-7 item col">
+    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+    <span class="succes-cases__work">tapgerine</span>
+  </div>
+</div>
+</div>
+</div>`
+
+const mediaForGrid = window.matchMedia('(min-width: 1360px)')
+const divElement = document.querySelector('.succes-cases__box-content')
+
+function initGrid(event) {
+  if (event.matches) {
+    divElement.innerHTML = gridContent;
+    divElement.classList.add('grid-layout');
+  } else {
+    divElement.innerHTML = '';
+    divElement.classList.remove('grid-layout');
+    divElement.innerHTML = ulContent
+  }
+}
+
+mediaForGrid.addListener(initGrid);
+initGrid(mediaForGrid);
+
+// function openText() {
+//   const textElements = document.querySelectorAll('.totell__text');
+//   const imgElements = document.querySelectorAll('.totell__img');
+
+//   imgElements.forEach(function(imgElement) {
+//     imgElement.addEventListener('click', function() {
+//       textElements.forEach(function(item) {
+//         item.style.display = 'block';
+//       });
+//     });
+//   });
+// }
+// function openText() {
+//   const textElements = document.querySelectorAll('.totell__text');
+//   const imgElements = document.querySelectorAll('.totell__img');
+
+//   imgElements.forEach(function(imgElement, index) {
+//     imgElement.addEventListener('click', function() {
+//       let element = textElements.imgElements;
+//       element[index].style.display = 'block';
+
+//     });
+//   });
+// }
+function openText() {
+  const textElements = document.querySelectorAll('.totell__text');
+  const imgElements = document.querySelectorAll('.totell__item');
+  const winElement = window.matchMedia('(max-width: 900px)');
+
+  imgElements.forEach(function(imgElement, index) {
+    imgElement.addEventListener('click', function() {
+      let element = textElements[index];
+      if(winElement .matches){
+      if(element.style.display == 'block'){
+        element.style.display = 'none';
+      }else{
+        element.style.display = 'block';
+      }
+    }
+    });
+  });
+}
+winElement .addListener(openText)
+openText();
