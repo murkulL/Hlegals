@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+body{
+    background-color: $grey-bg-alt;
+}
+@media screen and (max-width: 370px){
+    .header{
+        &__nav-item-link-about{
+            color: red;
+        }
+    }
+}
