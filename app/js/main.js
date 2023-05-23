@@ -70,7 +70,7 @@ let tabContent = `<div class="d-flex align-items-start">
   <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0"><b class="info__post-title">Перевертаємо уявлення про юридичні послуги - 4</b>
   <p class="info__text">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p></div>
 </div>
-</div>`
+</div>`;
 
 let sliderContent = `<div class="info__slider-item">
 <h4 class="info__title">Послідовні</h4>
@@ -98,6 +98,14 @@ let sliderContent = `<div class="info__slider-item">
 </div>`;
 
 $(document).ready(function() {
+  $('.achieve__slider').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    appendDots: '.achieve__slider-dots'
+  });
+
   $('.team__slider').slick({
     arrows: false,
     dots: true,
@@ -178,7 +186,7 @@ let ulContent = ` <ul class="succes-cases__items">
     <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
     <span class="succes-cases__work">tapgerine</span>
 </li>
-</ul>`
+</ul>`;
 
 
 let gridContent = `<div class="succes-cases__items text-center">
@@ -214,49 +222,28 @@ let gridContent = `<div class="succes-cases__items text-center">
   </div>
 </div>
 </div>
-</div>`
+</div>`;
 
-const mediaForGrid = window.matchMedia('(min-width: 1360px)')
-const divElement = document.querySelector('.succes-cases__box-content')
+// const mediaForGrid = window.matchMedia('(min-width: 1360px)')
+// const divElement = document.querySelector('.succes-cases__box-content')
 
-function initGrid(event) {
-  if (event.matches) {
-    divElement.innerHTML = gridContent;
-    divElement.classList.add('grid-layout');
-  } else {
-    divElement.innerHTML = '';
-    divElement.classList.remove('grid-layout');
-    divElement.innerHTML = ulContent
-  }
-}
-
-mediaForGrid.addListener(initGrid);
-initGrid(mediaForGrid);
-
-// function openText() {
-//   const textElements = document.querySelectorAll('.totell__text');
-//   const imgElements = document.querySelectorAll('.totell__img');
-
-//   imgElements.forEach(function(imgElement) {
-//     imgElement.addEventListener('click', function() {
-//       textElements.forEach(function(item) {
-//         item.style.display = 'block';
-//       });
-//     });
-//   });
+// function initGrid(event) {
+//   if (event.matches) {
+//     divElement.innerHTML = gridContent;
+//     divElement.classList.add('grid-layout');
+//   } else {
+//     divElement.innerHTML = '';
+//     divElement.classList.remove('grid-layout');
+//     divElement.innerHTML = ulContent
+//   }
 // }
-// function openText() {
-//   const textElements = document.querySelectorAll('.totell__text');
-//   const imgElements = document.querySelectorAll('.totell__img');
 
-//   imgElements.forEach(function(imgElement, index) {
-//     imgElement.addEventListener('click', function() {
-//       let element = textElements.imgElements;
-//       element[index].style.display = 'block';
+// mediaForGrid.addListener(initGrid);
+// initGrid(mediaForGrid);
 
-//     });
-//   });
-// }
+
+
+
 function openText() {
   const textElements = document.querySelectorAll('.totell__text');
   const imgElements = document.querySelectorAll('.totell__item');
