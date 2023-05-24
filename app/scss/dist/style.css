@@ -201,6 +201,7 @@ body {
 .container-fluid {
   max-width: 1920px;
   margin: 0 auto;
+  --bs-gutter-x: 0;
 }
 
 @media screen and (min-width: 374px) {
@@ -294,7 +295,7 @@ body {
   }
 
   .burger--active {
-    top: 18px;
+    top: 12px;
     width: 32px;
     height: 32px;
   }
@@ -369,11 +370,12 @@ body {
     color: white;
     padding: 5px 6px;
     margin-top: -7px;
+    transition: all 0.3s ease-in-out;
   }
   .header__nav-items {
     list-style: none;
     text-align: center;
-    transform: translateY(-120%);
+    transform: translateY(100%);
     transition: all 0.3s ease-in-out;
     margin: 0 auto;
     width: 100%;
@@ -386,9 +388,11 @@ body {
     border-top: 1px solid transparent;
     padding-top: 62px;
     z-index: 1000;
+    display: none;
   }
   .header__nav-items--active {
     transform: translateY(0);
+    display: block;
   }
   .header__nav-items--active::before {
     content: "";
@@ -398,8 +402,8 @@ body {
     height: 32px;
     background-repeat: no-repeat;
     margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 24px;
+    margin-bottom: 14px;
+    margin-top: 16px;
   }
   .header__nav-item-link {
     width: 335px;
@@ -428,7 +432,6 @@ body {
 }
 .sysadmin {
   position: relative;
-  position: relative;
   height: 640px;
 }
 .sysadmin::after {
@@ -456,7 +459,7 @@ body {
   position: absolute;
   max-width: 475px;
   height: 124px;
-  top: 235px;
+  top: 246px;
   right: 40px;
   left: 40px;
   display: block;
@@ -524,7 +527,6 @@ body {
 .whatwedo {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  position: relative;
   position: relative;
   padding: 0 20px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 67.17%, #643E72 100.46%);
@@ -838,7 +840,8 @@ body {
   display: block;
   padding: 12px 0;
   box-shadow: 0px 0px 10px #0d6efd;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 10PX;
 }
 .totell__inner {
   position: relative;
@@ -1810,4 +1813,7 @@ li.slick-active button {
   .service__items {
     margin-right: 150px;
   }
+}
+.grayed {
+  filter: grayscale(50%);
 }

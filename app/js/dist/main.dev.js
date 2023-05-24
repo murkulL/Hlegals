@@ -177,15 +177,17 @@ function openText() {
 }
 
 winElement.addListener(openText);
-openText();
-document.addEventListener('DOMContentLoaded', function () {
-  var btnTotell = document.querySelector('.btn');
+openText(); // document.addEventListener('DOMContentLoaded', function() {
+//   const btnTotell = document.querySelector('.btn');
+//   function changeTextOnBtn(){
+//     btnTotell.addEventListener('click', function(){
+//       btnTotell.style.display = "none"
+//     });
+//   }
+//   changeTextOnBtn();
+// });
 
-  function changeTextOnBtn() {
-    btnTotell.addEventListener('click', function () {
-      btnTotell.style.display = "none";
-    });
-  }
-
-  changeTextOnBtn();
+var body = document.querySelector('body');
+document.querySelector(".burger").addEventListener("click", function () {
+  body.classList.toggle("grayed");
 });

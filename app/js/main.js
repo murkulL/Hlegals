@@ -277,14 +277,19 @@ winElement .addListener(openText)
 openText();
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const btnTotell = document.querySelector('.btn');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const btnTotell = document.querySelector('.btn');
 
-  function changeTextOnBtn(){
-    btnTotell.addEventListener('click', function(){
-      btnTotell.style.display = "none"
-    });
-  }
+//   function changeTextOnBtn(){
+//     btnTotell.addEventListener('click', function(){
+//       btnTotell.style.display = "none"
+//     });
+//   }
 
-  changeTextOnBtn();
+//   changeTextOnBtn();
+// });
+
+const body = document.querySelector('body')
+document.querySelector(".burger").addEventListener("click", function() {
+  body.classList.toggle("grayed");
 });
