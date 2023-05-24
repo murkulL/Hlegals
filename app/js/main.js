@@ -20,11 +20,13 @@ window.addEventListener('load',function(){
 
 const menu = document.querySelector('.header__nav-items')
 const buttom = document.querySelector('.burger')
+const buttomAbout = document.querySelector('.burger-about')
 
 function menuActive(){
     buttom.addEventListener('click',function(){
         menu.classList.toggle('header__nav-items--active')
         buttom.classList.toggle('burger--active')
+        buttomAbout.classList.toggle('burger-about--active')
     })
 }
 
@@ -103,7 +105,16 @@ $(document).ready(function() {
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 2,
-    appendDots: '.achieve__slider-dots'
+    appendDots: '.achieve__slider-dots',
+    mobileFirst: true,
+    responsive: [
+      {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+      }]
   });
 
   $('.team__slider').slick({
@@ -266,3 +277,14 @@ winElement .addListener(openText)
 openText();
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const btnTotell = document.querySelector('.btn');
+
+  function changeTextOnBtn(){
+    btnTotell.addEventListener('click', function(){
+      btnTotell.style.display = "none"
+    });
+  }
+
+  changeTextOnBtn();
+});
