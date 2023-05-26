@@ -100,7 +100,6 @@
 .burger--active::after{
     bottom: 50%;
     transform: rotate(45deg) ;
-   
 }
 .header{
     position: relative;
@@ -700,7 +699,6 @@
         padding-left: 21px ;
         padding-bottom: 20px;
         display: block;
-        
     }
 }
 .footer{
@@ -736,7 +734,6 @@
         left: 20px;
         right: 20px;
     }
-
     &__nav{
         display: block;
         margin: 0 auto;
@@ -957,7 +954,6 @@
             top: 286px;
         }
         &__post-title{
-            // padding-top: 60px;
             font-size: 32px;
             line-height: 38px;
         }
@@ -1110,37 +1106,18 @@
         &__item{
             max-width: 414px;
         }
-
-        // height: 872px;
-
-        // &__lists{
-        //     display: flex;
-        //     align-items: flex-start;
-        //     flex-wrap: wrap;
-        // }
-        // &__list-the-end{
-        //     padding-bottom: 110px;
-        // }
-        // &__items{
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content: center;
-        //     align-items: flex-start;
-        // }
         &__item{
             display: flex;
             flex-direction: column;
             margin-bottom: 40px;
         }
         &__main-link{
-            // margin: 0px auto 0 20px;
             position: absolute;
             left: 290px;
             top: 20px;
             padding-left: 0;
         }
         &__title{
-            // margin: 0px auto 0 20px;
             top: 62px;
             position: absolute;
             left: 60px;
@@ -1176,9 +1153,7 @@
         background: #f5f5fa;
         &::before{
             content: '';
-
             top: 40px;
-
         }
         .btn-totell {
             position: absolute;
@@ -1190,7 +1165,6 @@
             width: 250px;
             margin: 0 auto;
             top: -40px;
-
         }
         &__nav{
             padding-bottom: 9px;
@@ -1252,7 +1226,6 @@
             font-weight: 700;
             font-size: 42px;
             line-height: 50px;
-
         }
     }
 }
@@ -1296,16 +1269,6 @@
         }
     }
 }
-// @media screen and (min-width: 1370px){
-//     .totell{
-//         &__main-link{
-//             left: 322px;
-//         }
-//         &__title{
-//             left: 90px;
-//         }
-//     }
-// }
 .slick-dots li button {
 	background-color: $active-regulur; 
   }
@@ -1413,7 +1376,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-           
             font-size: 36px;
             line-height: 42px;
             padding-bottom: 20px;
@@ -1537,7 +1499,6 @@
                 padding: 25px 0;
             }
         }
-
 }
 @media screen and (min-width: 900px){
     .header{
@@ -1649,7 +1610,6 @@
         &__title{
             font-size: 42px;
             line-height: 50px;
-
         }
         &__text{
             font-size: 21px;
@@ -1665,7 +1625,7 @@
 
     &__post-title {
         padding-top: 60px;
-    }
+        }
     }
 }
 @media screen and (min-width: 1300px){

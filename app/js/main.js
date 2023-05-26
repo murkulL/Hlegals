@@ -13,12 +13,24 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 
 
 window.addEventListener('load',function(){
+  buttonLanguage()
   menuActive()
   hiddenContent()
-  buttonLanguage()
+
   handleScreenChange()
 
 });
+
+const buttonLangu = document.querySelectorAll('.header__language-btn');
+
+function buttonLanguage() {
+  buttonLangu.forEach(function(item) {
+    item.addEventListener('click', function(){
+      item.classList.toggle('header__language-btn--active');
+    })
+  });
+}
+
 
 const btnPrimary = document.querySelector('.btn-totell');
 const containerToTel = document.querySelector('.hidden-content');
@@ -46,32 +58,6 @@ function menuActive(){
         buttomAbout.classList.toggle('burger-about--active')
     })
 }
-
-
-const buttonLangu = document.querySelectorAll('.header__language-btn');
-
-function buttonLanguage() {
-  buttonLangu.forEach(function(item) {
-    item.addEventListener('click', function(){
-      item.classList.toggle('header__language-btn--active');
-    })
-  });
-}
-
-// const img = document.querySelectorAll('.totell__img')
-
-// function collaps(){
-//   img.forEach(function(item){
-//     item.addEventListener('click',() => {
-//       item.setAttribute('type', 'img');
-//       item.setAttribute('data-bs-toggle', 'collapse');
-//       item.setAttribute('data-bs-target', '.collapseExample');
-//       item.setAttribute('aria-expanded', 'false');
-//       item.setAttribute('aria-controls', 'collapseExample');
-//     })
-//   })
-// }
-
 let tabContent = `<div class="d-flex align-items-start">
 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
   <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Послідовні</button>
@@ -163,10 +149,6 @@ $(document).ready(function() {
       sliderInitialized = true;
     }
   }
-
-  // function initTab(){
-  //   infoSlider.html(tabContent)
-  // }
 
   const mediaQuery = window.matchMedia('(min-width: 900px)');
 
@@ -270,8 +252,6 @@ let ulContent = ` <ul class="succes-cases__items">
 // initGrid(mediaForGrid);
 
 
-
-
 function openText() {
   const textElements = document.querySelectorAll('.totell__text');
   const imgElements = document.querySelectorAll('.totell__item');
@@ -292,22 +272,3 @@ function openText() {
 }
 winElement .addListener(openText)
 openText();
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const btnTotell = document.querySelector('.btn');
-
-//   function changeTextOnBtn(){
-//     btnTotell.addEventListener('click', function(){
-//       btnTotell.style.display = "none"
-//     });
-//   }
-
-//   changeTextOnBtn();
-// });
-
-// const body = document.querySelector('body')
-// document.querySelector(".burger").addEventListener("click", function() {
-//   body.classList.toggle("grayed");
-// });
-
