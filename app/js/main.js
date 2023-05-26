@@ -13,10 +13,10 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 
 
 window.addEventListener('load',function(){
-    hiddenContent()
-    menuActive()
-    buttonLanguage()
-    handleScreenChange()
+  menuActive()
+  hiddenContent()
+  buttonLanguage()
+  handleScreenChange()
 
 });
 
@@ -217,40 +217,40 @@ let ulContent = ` <ul class="succes-cases__items">
 </ul>`;
 
 
-let gridContent = `<div class="succes-cases__items text-center">
-<div class="row">
-  <div class="succes-cases__item item-1 col">
-    <h4 class="succes-cases__title">Успішні кейси</h4>
-  <div class="succes-cases__item item-4 item col">
-    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
-    <span class="succes-cases__work">Hillel IT School</span>
-  </div>
-</div>
-  <div class="succes-cases__item item-2 item col">
-    <p class="succes-cases__text">Підготовка комплексного юридичного висновку для європейського банку</p>
-    <span class="succes-cases__work">WannaBiz</span>
-  </div>
-  <div class="succes-cases__item item-3 item col">
-    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
-    <span class="succes-cases__work">tapgerine</span>
-  </div>
-</div>
-<div class="row">
-  <div class="succes-cases__item item-5 item col">
-    <p class="succes-cases__text">Оскарження податкових повідомлень-рішень ДФС</p>
-    <span class="succes-cases__work">adtelligent</span>
-  </div>
-  <div class="succes-cases__item item-6 item col">
-    <p class="succes-cases__text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
-    <span class="succes-cases__work">Clikky</span>
-  </div>
-  <div class="succes-cases__item item-7 item col">
-    <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
-    <span class="succes-cases__work">tapgerine</span>
-  </div>
-</div>
-</div>
-</div>`;
+// let gridContent = `<div class="succes-cases__items text-center">
+// <div class="row">
+//   <div class="succes-cases__item item-1 col">
+//     <h4 class="succes-cases__title">Успішні кейси</h4>
+//   <div class="succes-cases__item item-4 item col">
+//     <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+//     <span class="succes-cases__work">Hillel IT School</span>
+//   </div>
+// </div>
+//   <div class="succes-cases__item item-2 item col">
+//     <p class="succes-cases__text">Підготовка комплексного юридичного висновку для європейського банку</p>
+//     <span class="succes-cases__work">WannaBiz</span>
+//   </div>
+//   <div class="succes-cases__item item-3 item col">
+//     <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+//     <span class="succes-cases__work">tapgerine</span>
+//   </div>
+// </div>
+// <div class="row">
+//   <div class="succes-cases__item item-5 item col">
+//     <p class="succes-cases__text">Оскарження податкових повідомлень-рішень ДФС</p>
+//     <span class="succes-cases__work">adtelligent</span>
+//   </div>
+//   <div class="succes-cases__item item-6 item col">
+//     <p class="succes-cases__text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+//     <span class="succes-cases__work">Clikky</span>
+//   </div>
+//   <div class="succes-cases__item item-7 item col">
+//     <p class="succes-cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+//     <span class="succes-cases__work">tapgerine</span>
+//   </div>
+// </div>
+// </div>
+// </div>`;
 
 // const mediaForGrid = window.matchMedia('(min-width: 1360px)')
 // const divElement = document.querySelector('.succes-cases__box-content')

@@ -1096,6 +1096,7 @@
     }
     .totell{
         transition: all 3s ease;
+
         .hidden-content{
             position: relative;
             height: 74vh;
@@ -1104,7 +1105,12 @@
         }
         &__inner{
             padding-bottom: 60px;
+            padding-top: 152px;
         }
+        &__item{
+            max-width: 414px;
+        }
+
         // height: 872px;
 
         // &__lists{
@@ -1124,18 +1130,29 @@
         &__item{
             display: flex;
             flex-direction: column;
+            margin-bottom: 40px;
         }
         &__main-link{
-            margin-left: -640px;
+            // margin: 0px auto 0 20px;
+            position: absolute;
+            left: 280px;
+            top: 20px;
+            padding-left: 0;
         }
         &__title{
-            margin-left: -310px;
+            // margin: 0px auto 0 20px;
+            top: 62px;
+            position: absolute;
+            left: 48px;
             font-weight: 700;
             font-size: 42px;
             line-height: 50px;
         }
         &__text{
             display: block; 
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
         }
         .box{
             display: flex;
@@ -1228,16 +1245,6 @@
         }
     }
 }
-@media screen and (min-width: 1135px){
-    .totell{
-        &__main-link{
-            margin-left: -1000px;
-        }
-        &__title{
-            margin-left: -672px;
-        }
-    }
-}
 @media screen and (min-width: 1316px){
     .team{
         &__text {
@@ -1285,6 +1292,16 @@
         }
         .item-7{
             border-radius:0 0 12px 0;
+        }
+    }
+}
+@media screen and (min-width: 1370px){
+    .totell{
+        &__main-link{
+            left: 322px;
+        }
+        &__title{
+            left: 90px;
         }
     }
 }

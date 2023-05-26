@@ -1319,22 +1319,35 @@ body {
   }
   .totell__inner {
     padding-bottom: 60px;
+    padding-top: 152px;
+  }
+  .totell__item {
+    max-width: 414px;
   }
   .totell__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   }
   .totell__main-link {
-    margin-left: -640px;
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    padding-left: 0;
   }
   .totell__title {
-    margin-left: -310px;
+    top: 62px;
+    position: absolute;
+    left: 48px;
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
   }
   .totell__text {
     display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
   }
   .totell .box {
     display: flex;
@@ -1420,14 +1433,6 @@ body {
     bottom: 173px;
   }
 }
-@media screen and (min-width: 1135px) {
-  .totell__main-link {
-    margin-left: -1000px;
-  }
-  .totell__title {
-    margin-left: -672px;
-  }
-}
 @media screen and (min-width: 1316px) {
   .team__text {
     font-weight: 700;
@@ -1471,6 +1476,14 @@ body {
   }
   .succes-cases .item-7 {
     border-radius: 0 0 12px 0;
+  }
+}
+@media screen and (min-width: 1370px) {
+  .totell__main-link {
+    left: 322px;
+  }
+  .totell__title {
+    left: 90px;
   }
 }
 .slick-dots li button {
