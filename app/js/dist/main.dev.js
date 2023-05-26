@@ -37,10 +37,26 @@ try {
 }
 
 window.addEventListener('load', function () {
+  hiddenContent();
   menuActive();
   buttonLanguage();
-  handleScreenChange(); // collaps()
+  handleScreenChange();
 });
+var btnPrimary = document.querySelector('.btn-totell');
+var containerToTel = document.querySelector('.hidden-content');
+
+function hiddenContent() {
+  btnPrimary.addEventListener('click', function () {
+    if (containerToTel.classList.contains('hidden-content')) {
+      containerToTel.classList.remove('hidden-content');
+      btnPrimary.innerHTML = 'Згорнути';
+    } else {
+      containerToTel.classList.add('hidden-content');
+      btnPrimary.innerHTML = 'Ще публікації';
+    }
+  });
+}
+
 var menu = document.querySelector('.header__nav-items');
 var buttom = document.querySelector('.burger');
 var buttomAbout = document.querySelector('.burger-about');
@@ -186,8 +202,7 @@ openText(); // document.addEventListener('DOMContentLoaded', function() {
 //   }
 //   changeTextOnBtn();
 // });
-
-var body = document.querySelector('body');
-document.querySelector(".burger").addEventListener("click", function () {
-  body.classList.toggle("grayed");
-});
+// const body = document.querySelector('body')
+// document.querySelector(".burger").addEventListener("click", function() {
+//   body.classList.toggle("grayed");
+// });

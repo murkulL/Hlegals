@@ -11,12 +11,29 @@ const anchors = document.querySelectorAll('a[href*="#"]')
   }
 
 
+
 window.addEventListener('load',function(){
+    hiddenContent()
     menuActive()
     buttonLanguage()
     handleScreenChange()
-    // collaps()
+
 });
+
+const btnPrimary = document.querySelector('.btn-totell');
+const containerToTel = document.querySelector('.hidden-content');
+
+function hiddenContent() {
+  btnPrimary.addEventListener('click', function() {
+    if (containerToTel.classList.contains('hidden-content')) {
+      containerToTel.classList.remove('hidden-content');
+      btnPrimary.innerHTML = 'Згорнути';
+    } else {
+      containerToTel.classList.add('hidden-content');
+      btnPrimary.innerHTML = 'Ще публікації';
+    }
+  });
+}
 
 const menu = document.querySelector('.header__nav-items')
 const buttom = document.querySelector('.burger')
@@ -289,7 +306,8 @@ openText();
 //   changeTextOnBtn();
 // });
 
-const body = document.querySelector('body')
-document.querySelector(".burger").addEventListener("click", function() {
-  body.classList.toggle("grayed");
-});
+// const body = document.querySelector('body')
+// document.querySelector(".burger").addEventListener("click", function() {
+//   body.classList.toggle("grayed");
+// });
+

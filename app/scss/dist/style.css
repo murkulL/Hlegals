@@ -830,27 +830,21 @@ body {
 }
 
 .totell {
+  transition: all 3s ease;
   background: #F5F5FA;
 }
-.totell .btn {
-  width: 250px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 12px;
-  display: block;
-  padding: 12px 0;
-  box-shadow: 0px 0px 10px #0d6efd;
-  margin-top: 40px;
-  margin-bottom: 10PX;
-}
-.totell__inner {
+.totell .hidden-content {
   position: relative;
+  height: 72.5vh;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 .totell__inner {
   min-width: 335px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .totell__lists {
   padding: 0;
@@ -929,9 +923,26 @@ body {
 
 .footer {
   position: relative;
-  padding-top: 53px;
-  padding-top: 63px;
+  padding-top: 153px;
   background: #F5F5FA;
+}
+.footer .btn-totell {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: block;
+  padding: 12px 0;
+  box-shadow: 0px 0px 10px #24A3FF;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  top: 0px;
+  --bs-btn-bg:#24A3FF;
+  --bs-btn-border-color: none;
 }
 .footer::before {
   content: "";
@@ -939,7 +950,7 @@ body {
   max-width: 100%;
   background: #e6e6f0;
   display: block;
-  top: 40px;
+  top: 130px;
   position: absolute;
   left: 20px;
   right: 20px;
@@ -1297,19 +1308,17 @@ body {
     height: 120px;
   }
 
-  .totell__lists {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  .totell {
+    transition: all 3s ease;
   }
-  .totell__list-the-end {
-    padding-bottom: 110px;
+  .totell .hidden-content {
+    position: relative;
+    height: 74vh;
+    overflow: hidden;
+    transition: height 0.3s ease;
   }
-  .totell__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+  .totell__inner {
+    padding-bottom: 60px;
   }
   .totell__item {
     display: flex;
@@ -1327,6 +1336,10 @@ body {
   .totell__text {
     display: block;
   }
+  .totell .box {
+    display: flex;
+    height: 100%;
+  }
 
   .gradient::after {
     content: "";
@@ -1338,18 +1351,26 @@ body {
     position: absolute;
   }
 
-  .totell .btn {
+  .footer {
+    position: relative;
+    padding-top: 53px;
+    padding-top: 40px;
+    background: #f5f5fa;
+  }
+  .footer::before {
+    content: "";
+    top: 40px;
+  }
+  .footer .btn-totell {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
-  }
-
-  .footer {
-    padding-top: 53px;
-    padding-top: 40px;
-    background: #f5f5fa;
+    height: 50px;
+    width: 250px;
+    margin: 0 auto;
+    top: -40px;
   }
   .footer__nav {
     padding-bottom: 9px;
