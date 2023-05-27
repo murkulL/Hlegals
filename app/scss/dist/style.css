@@ -835,7 +835,7 @@ body {
 }
 .totell .hidden-content {
   position: relative;
-  height: 65.5vh;
+  height: 875px;
   overflow: hidden;
   transition: height 0.3s ease;
 }
@@ -859,7 +859,7 @@ body {
   margin: 0 auto;
 }
 .totell__main-link {
-  margin-left: -260px;
+  margin-left: -50px;
   padding-left: 20px;
   display: block;
   padding-top: 20px;
@@ -923,7 +923,7 @@ body {
 
 .footer {
   position: relative;
-  padding-top: 153px;
+  padding-top: 163px;
   background: #F5F5FA;
 }
 .footer .btn-totell {
@@ -950,7 +950,7 @@ body {
   max-width: 100%;
   background: #e6e6f0;
   display: block;
-  top: 130px;
+  top: 140px;
   position: absolute;
   left: 20px;
   right: 20px;
@@ -1331,7 +1331,7 @@ body {
   }
   .totell__main-link {
     position: absolute;
-    left: 290px;
+    left: 83px;
     top: 20px;
     padding-left: 0;
   }
@@ -1416,7 +1416,7 @@ body {
     right: 20px;
     display: block;
     position: absolute;
-    top: 35px;
+    top: 33px;
   }
   .footer__nav-link {
     position: absolute;

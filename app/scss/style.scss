@@ -612,13 +612,13 @@
 }
 .totell{
     transition: all 3s ease;
+    background: $grey-bg;
     .hidden-content{
         position: relative;
-        height: 65.5vh;
+        height: 875px;
         overflow: hidden;
         transition: height 0.3s ease;
     }
-    background: $grey-bg;
     &__inner{
         min-width: 335px;
         display: flex;
@@ -639,7 +639,7 @@
         margin: 0 auto;
     }
     &__main-link{
-        margin-left: -260px;
+        margin-left: -50px;
         padding-left: 20px;
         display: block;
         padding-top: 20px;
@@ -703,7 +703,7 @@
 }
 .footer{
     position: relative;
-    padding-top: 153px;
+    padding-top: 163px;
     background: $grey-bg;
     .btn-totell {
         position: absolute;
@@ -729,7 +729,7 @@
         max-width: 100%;
         background: #e6e6f0;
         display: block;
-        top: 130px;
+        top: 140px;
         position: absolute;
         left: 20px;
         right: 20px;
@@ -782,6 +782,7 @@
         display: block;
     }
 }
+
 @media screen and (min-width: 800px){
     .whatwedo{
         &__item{
@@ -1113,7 +1114,7 @@
         }
         &__main-link{
             position: absolute;
-            left: 290px;
+            left: 83px;
             top: 20px;
             padding-left: 0;
         }
@@ -1196,7 +1197,7 @@
             right: 20px;
             display: block;
             position: absolute;
-            top: 35px;
+            top: 33px;
         }
         &__nav-link{
             position: absolute;
