@@ -155,6 +155,7 @@
             padding: 5px 6px;
             margin-top: -7px;
             transition: all .3s ease-in-out;
+            color: white;
         }
         &__language-btn--active{
             border-radius: 8px;
@@ -1114,7 +1115,7 @@
         }
     }
     .totell{
-        transition: all 3s ease;
+        transition: height 0.3s ease;
         .hidden-content{
             position: relative;
             height: 74vh;
@@ -1226,6 +1227,16 @@
             left: 20px;
             top: 80px;
         }
+        &__link:hover,&__mail:hover{
+            color: $accent;
+        }
+
+    }
+    #footer-facebook{
+        color: $active-regulur;
+    }
+    #footer-facebook:hover{
+        color: $accent;
     }
 }
 @media screen and (min-width: 930px){

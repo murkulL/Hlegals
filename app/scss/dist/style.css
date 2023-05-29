@@ -369,6 +369,7 @@ body {
     padding: 5px 6px;
     margin-top: -7px;
     transition: all 0.3s ease-in-out;
+    color: white;
   }
   .header__language-btn--active {
     border-radius: 8px;
@@ -1329,7 +1330,7 @@ body {
   }
 
   .totell {
-    transition: all 3s ease;
+    transition: height 0.3s ease;
   }
   .totell .hidden-content {
     position: relative;
@@ -1443,6 +1444,17 @@ body {
     position: absolute;
     left: 20px;
     top: 80px;
+  }
+  .footer__link:hover, .footer__mail:hover {
+    color: #F0145A;
+  }
+
+  #footer-facebook {
+    color: #24A3FF;
+  }
+
+  #footer-facebook:hover {
+    color: #F0145A;
   }
 }
 @media screen and (min-width: 930px) {
