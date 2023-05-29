@@ -16,9 +16,7 @@ window.addEventListener('load',function(){
   buttonLanguage()
   menuActive()
   hiddenContent()
-
   handleScreenChange()
-
 });
 
 const buttonLangu = document.querySelectorAll('.header__language-btn');
@@ -264,7 +262,7 @@ function openText() {
       if(element.style.display == 'block'){
         element.style.display = 'none';
       }else{
-        element.style.display = 'block';
+        element.style.display = 'none';//если меньше 
       }
     }
     });

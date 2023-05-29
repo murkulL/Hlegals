@@ -363,8 +363,15 @@ body {
     background-color: transparent;
     font-weight: 700;
   }
+  .header__language-btn:hover {
+    border-radius: 8px;
+    background-color: #B3B3BA;
+    padding: 5px 6px;
+    margin-top: -7px;
+    transition: all 0.3s ease-in-out;
+  }
   .header__language-btn--active {
-    border-radius: 15px;
+    border-radius: 8px;
     border: 1px solid transparent;
     background-color: #F0145A;
     color: white;
@@ -420,6 +427,9 @@ body {
     border-radius: 12px;
     margin-bottom: 11px;
     font-weight: 500;
+  }
+  .header__nav-item-link:hover {
+    color: #F0145A;
   }
   .header__tel {
     color: #B3B3BA;
@@ -997,6 +1007,10 @@ body {
 }
 .footer__mail {
   display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #24A3FF;
 }
 .footer__nav-copy {
   padding-bottom: 118px;
@@ -1034,6 +1048,9 @@ body {
   .header__nav-item-link:hover::after {
     height: 2px;
   }
+  .header__nav-item-link:hover {
+    color: white;
+  }
   .header__lists {
     display: flex;
     text-align: center;
@@ -1069,6 +1086,10 @@ body {
     margin-right: 20px;
     right: -40px;
     top: -3px;
+    transition: all 0.2s ease-in-out;
+  }
+  .header #facebook:hover {
+    fill: #0085FF;
   }
   .header__inner {
     padding-top: 0;
@@ -1567,6 +1588,13 @@ li.slick-active button {
     z-index: 1;
     left: 180px;
   }
+  .header #facebook-about {
+    fill: #B3B3BA;
+    transition: all 0.2s ease-in-out;
+  }
+  .header #facebook-about:hover {
+    fill: #24A3FF;
+  }
 
   .service {
     padding-top: 128px;
@@ -1700,6 +1728,14 @@ li.slick-active button {
     height: 57px;
     min-height: 57px;
   }
+
+  .footer-about {
+    padding-top: 63px;
+  }
+
+  .footer-about.footer::before {
+    top: 30px;
+  }
 }
 @media screen and (min-width: 640px) {
   .achieve .slick-slide img {
@@ -1746,6 +1782,9 @@ li.slick-active button {
   }
   .header__link-about:hover::after {
     height: 2px;
+  }
+  .header #facebook.header__link-about {
+    fill: #B3B3BA;
   }
 
   .team-photo__text {

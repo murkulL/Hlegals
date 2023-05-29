@@ -148,8 +148,16 @@
             background-color: transparent;
             font-weight: 700;
         }
+        &__language-btn:hover{
+            border-radius: 8px;
+            // border: 1px solid transparent;
+            background-color: $grey-text;
+            padding: 5px 6px;
+            margin-top: -7px;
+            transition: all .3s ease-in-out;
+        }
         &__language-btn--active{
-            border-radius: 15px;
+            border-radius: 8px;
             border: 1px solid transparent;
             background-color: #F0145A;
             color: white;
@@ -205,6 +213,9 @@
             border-radius: 12px;
             margin-bottom: 11px;
             font-weight: 500;
+        }
+        &__nav-item-link:hover{
+            color: #F0145A;
         }
         &__tel{
             color: $grey-text;
@@ -776,6 +787,10 @@
     }
     &__mail{
         display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $active-regulur;
     }
     &__nav-copy{
         padding-bottom: 118px;
@@ -816,6 +831,9 @@
         &__nav-item-link:hover::after {
             height: 2px;
         }
+        &__nav-item-link:hover {
+            color: white;
+        }
         &__lists{
             display: flex;
             text-align: center;
@@ -851,7 +869,11 @@
             position: absolute;
             margin-right: 20px;
             right: -40px;
-            top: -3px
+            top: -3px;
+            transition: all .2s ease-in-out;
+        }
+        #facebook:hover{
+            fill: $active-hover;
         }
         &__inner{
             padding-top: 0;
@@ -1356,6 +1378,13 @@
             z-index: 1;
             left: 180px;
         }
+        #facebook-about{
+            fill: $grey-text;
+            transition: all .2s ease-in-out;
+        }
+        #facebook-about:hover{
+            fill: $active-regulur;
+        }
     }
     .service{
         padding-top: 128px;
@@ -1489,6 +1518,12 @@
             min-height: 57px;
         }
     }
+    .footer-about{
+        padding-top: 63px;
+    }
+    .footer-about.footer::before{
+        top: 30px;
+    }
 }
 @media screen and (min-width: 640px){
 
@@ -1540,6 +1575,9 @@
         
         &__link-about:hover::after {
             height: 2px;
+        }
+        #facebook.header__link-about{
+            fill: $grey-text;
         }
     }
     .team-photo{
