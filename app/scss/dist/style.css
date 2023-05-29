@@ -318,15 +318,13 @@ body {
   .header {
     position: relative;
   }
-  .header #facebook {
-    fill: white;
-  }
   .header .flex {
     display: flex;
     flex-direction: column-reverse;
   }
   .header__link {
     display: none;
+    fill: white;
   }
   .header__address {
     display: none;
@@ -1576,6 +1574,10 @@ li.slick-active button {
     transition: all 0.3s ease 0s;
   }
 
+  .header__link-about {
+    fill: #B3B3BA;
+    color: #B3B3BA;
+  }
   .header__text {
     color: #323264;
     position: absolute;
@@ -1795,8 +1797,8 @@ li.slick-active button {
   .header__link-about:hover::after {
     height: 2px;
   }
-  .header #facebook.header__link-about {
-    fill: #B3B3BA;
+  .header #facebook.header__link:hover {
+    fill: #24A3FF;
   }
 
   .team-photo__text {

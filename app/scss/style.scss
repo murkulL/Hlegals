@@ -103,15 +103,16 @@
 }
 .header{
     position: relative;
-        #facebook{
-            fill: white;
-        }
+        // #facebook{
+        //     fill: white;
+        // }
         .flex{
          display: flex;
          flex-direction: column-reverse;
         }
         &__link{
             display: none;
+            fill: white;
         }
         &__address{
             display: none;
@@ -1365,6 +1366,11 @@
         transition: all .3s ease 0s;
     }
    .header{
+        &__link-about{
+            fill: $grey-text;
+            color:$grey-text ;
+
+        }
         &__text{
             color: $main-regulur;
             position: absolute;
@@ -1587,8 +1593,11 @@
         &__link-about:hover::after {
             height: 2px;
         }
-        #facebook.header__link-about{
-            fill: $grey-text;
+        // #facebook.header__link-about{
+        //     fill: $grey-text;
+        // }
+        #facebook.header__link:hover {
+            fill: $active-regulur;
         }
     }
     .team-photo{
@@ -1617,6 +1626,12 @@
         }
 
     }
+    // .footer{
+    //     #footer-facebook:hover{
+    //         fill: $accent;
+    //         color: $accent;
+    //     }
+    // }
 }
 @media screen and (min-width: 1040px){
         .header{
