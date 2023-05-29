@@ -1366,11 +1366,11 @@
         transition: all .3s ease 0s;
     }
    .header{
-        &__link-about{
-            fill: $grey-text;
-            color:$grey-text ;
+        // &__link-about{
+        //     fill: $grey-text;
+        //     color:$grey-text ;
 
-        }
+        // }
         &__text{
             color: $main-regulur;
             position: absolute;

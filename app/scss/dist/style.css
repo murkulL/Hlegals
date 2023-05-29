@@ -1574,10 +1574,6 @@ li.slick-active button {
     transition: all 0.3s ease 0s;
   }
 
-  .header__link-about {
-    fill: #B3B3BA;
-    color: #B3B3BA;
-  }
   .header__text {
     color: #323264;
     position: absolute;
