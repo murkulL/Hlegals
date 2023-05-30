@@ -1457,9 +1457,16 @@
         }
         &__item-text{
             color: $main-regulur;
-
             font-size: 18px;
             line-height: 21px;
+        }
+        &__text, &__text-2{
+            font-size: 21px;
+            line-height: 30px;
+            color: #000000;
+        }
+        &__text{
+            padding-bottom: 15px;
         }
     }
     .team-photo{
@@ -1487,6 +1494,15 @@
         &__text{
             padding-bottom: 20px;
         }
+        &__text1{
+            padding-bottom: 15px;
+        }
+        &__text2{
+            padding-bottom: 15px;
+        }
+        &__text3{
+            padding-bottom: 20px;
+        }
         &__title{
             font-size: 32px;
             line-height: 38px;
@@ -1496,6 +1512,12 @@
             background-clip: text;
             font-weight: 700;
         }
+        p{
+            font-size: 21px;
+            line-height: 30px;
+            color: #000000;
+        }
+
     }
     .achieve{
         background-color: $grey-bg;

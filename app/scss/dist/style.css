@@ -1664,6 +1664,14 @@ li.slick-active button {
     font-size: 18px;
     line-height: 21px;
   }
+  .service__text, .service__text-2 {
+    font-size: 21px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .service__text {
+    padding-bottom: 15px;
+  }
 
   .team-photo {
     position: relative;
@@ -1690,6 +1698,15 @@ li.slick-active button {
   .quality__text {
     padding-bottom: 20px;
   }
+  .quality__text1 {
+    padding-bottom: 15px;
+  }
+  .quality__text2 {
+    padding-bottom: 15px;
+  }
+  .quality__text3 {
+    padding-bottom: 20px;
+  }
   .quality__title {
     font-size: 32px;
     line-height: 38px;
@@ -1698,6 +1715,11 @@ li.slick-active button {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
+  }
+  .quality p {
+    font-size: 21px;
+    line-height: 30px;
+    color: #000000;
   }
 
   .achieve {
