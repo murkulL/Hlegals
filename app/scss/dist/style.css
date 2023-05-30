@@ -1015,6 +1015,9 @@ body {
   padding-bottom: 118px;
   display: block;
 }
+.footer #footer-facebook {
+  color: #24A3FF;
+}
 
 @media screen and (min-width: 800px) {
   .whatwedo__item {
@@ -1598,11 +1601,11 @@ li.slick-active button {
     z-index: 1;
     left: 180px;
   }
-  .header #facebook-about {
+  .header #facebook.header__link-about {
     fill: #B3B3BA;
     transition: all 0.2s ease-in-out;
   }
-  .header #facebook-about:hover {
+  .header #facebook.header__link-about:hover {
     fill: #24A3FF;
   }
 

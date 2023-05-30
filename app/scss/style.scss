@@ -798,6 +798,9 @@
         padding-bottom: 118px;
         display: block;
     }
+    #footer-facebook{
+        color: $active-regulur;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -1395,11 +1398,11 @@
             z-index: 1;
             left: 180px;
         }
-        #facebook-about{
+        #facebook.header__link-about{
             fill: $grey-text;
             transition: all .2s ease-in-out;
         }
-        #facebook-about:hover{
+        #facebook.header__link-about:hover{
             fill: $active-regulur;
         }
     }
